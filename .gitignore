@@ -5,3 +5,6 @@
 .DS_Store
 /cookbooks
 /tmp
+chef_server_backup.rb
+/.chef/chef_server_backup
+/.chef/backup
