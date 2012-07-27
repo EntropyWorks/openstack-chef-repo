@@ -1,0 +1,104 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'chef-client',
+  :git => 'https://github.com/opscode-cookbooks/chef-client.git'
+
+cookbook 'ohai'
+cookbook 'python'
+cookbook 'runit'
+cookbook 'ufw'
+cookbook 'firewall'
+cookbook 'annoyances'
+cookbook 'selinux'
+cookbook 'users'
+cookbook 'modules'
+
+cookbook 'ntp',
+  :ref => '1.1.8'
+
+cookbook 'openssh',
+  :ref => '0.8.0'
+
+cookbook 'apt',
+  :ref => '1.4.2'
+
+cookbook 'yum',
+  :ref => '0.6.2'
+
+cookbook 'build-essential',
+  :ref => '1.0.2'
+
+cookbook 'erlang',
+  :ref => '1.0.0'
+
+cookbook 'openssl',
+  :ref => '1.0.0'
+
+cookbook 'chef_handler',
+  :ref => '1.0.6'
+
+cookbook 'mysql',
+  :ref => '1.2.6'
+
+cookbook 'postgresql',
+  :ref => '0.99.4'
+
+cookbook 'aws',
+  :ref => '0.99.1'
+
+cookbook 'xfs',
+  :ref => '1.0.0'
+
+cookbook 'apache2',
+  :ref => '1.1.12'
+
+cookbook 'dsh',
+  :git => 'https://github.com/rcbops-cookbooks/dsh.git'
+
+cookbook 'rabbitmq',
+  :git => 'https://github.com/opscode-cookbooks/rabbitmq.git'
+
+cookbook 'database',
+  :git => 'https://github.com/mattray/database.git'
+
+
+cookbook 'osops-utils',
+  :git => 'https://github.com/mattray/osops-utils.git'
+
+cookbook 'horizon',
+  :git => 'https://github.com/mattray/horizon.git',
+  :ref => 'essex'
+
+cookbook 'swift',
+  :git => 'https://github.com/mattray/swift.git',
+  :ref => 'essex'
+  
+cookbook 'nova',
+  :git => 'https://github.com/mattray/nova.git',
+  :ref => 'essex'
+
+cookbook 'keystone',
+  :git => 'https://github.com/mattray/keystone.git',
+  :ref => 'essex'
+
+# Things missing still in Opscode Cookbooks
+cookbook 'monit',
+  :git => 'https://github.com/rcbops-cookbooks/monit.git'
+
+cookbook 'glance',
+  :git => 'https://github.com/rcbops-cookbooks/glance.git'
+
+cookbook 'monitoring',
+  :git => 'https://github.com/rcbops-cookbooks/monitoring.git'
+
+cookbook 'collectd',
+  :git => 'https://github.com/rcbops-cookbooks/collectd.git'
+
+cookbook 'rsyslog',
+  :git => 'https://github.com/rcbops-cookbooks/rsyslog.git'
+
+cookbook 'sysctl',
+  :git => 'https://github.com/rcbops-cookbooks/sysctl.git'
