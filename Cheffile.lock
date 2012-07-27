@@ -1,0 +1,218 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    annoyances (0.0.2)
+    apache2 (1.1.12)
+    apt (1.4.4)
+    aws (0.100.0)
+    build-essential (1.1.0)
+    chef_handler (1.0.6)
+    erlang (1.0.0)
+      yum (>= 0.5.0)
+    firewall (0.8.0)
+    modules (0.1.0)
+    mysql (1.2.6)
+      openssl (>= 0.0.0)
+      windows (>= 0.0.0)
+    ntp (1.1.8)
+    ohai (1.0.2)
+    openssh (0.8.0)
+    openssl (1.0.0)
+    postgresql (0.99.4)
+      openssl (>= 0.0.0)
+    python (1.0.6)
+      build-essential (>= 0.0.0)
+    runit (0.15.0)
+    selinux (0.5.2)
+    ufw (0.6.1)
+      firewall (>= 0.8)
+    users (1.1.2)
+    windows (1.3.2)
+      chef_handler (>= 0.0.0)
+    xfs (1.0.0)
+    yum (0.6.2)
+
+GIT
+  remote: https://github.com/mattray/database.git
+  ref: master
+  sha: e0cee214104c6c32667eb9a58ecf2f18d63ca295
+  specs:
+    database (1.2.0)
+      aws (>= 0.0.0)
+      mysql (>= 1.2.0)
+      postgresql (>= 0.0.0)
+      xfs (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mattray/horizon.git
+  ref: essex
+  sha: bf023c7e459fa688582e9978475717114c45abb3
+  specs:
+    horizon (5.0.0)
+      apache2 (>= 0.0.0)
+      database (>= 0.0.0)
+      mysql (>= 0.0.0)
+      osops-utils (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mattray/keystone.git
+  ref: essex
+  sha: 40ddc3852c17a48e514ee7e161a5b936c1f08f37
+  specs:
+    keystone (5.0.0)
+      database (>= 0.0.0)
+      mysql (>= 0.0.0)
+      osops-utils (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mattray/nova.git
+  ref: essex
+  sha: 80644b9723d91c5de80c3b728cc83abf4c97e126
+  specs:
+    nova (5.0.0)
+      apt (>= 0.0.0)
+      database (>= 0.0.0)
+      glance (>= 0.0.0)
+      keystone (>= 0.0.0)
+      mysql (>= 0.0.0)
+      openssh (>= 0.0.0)
+      osops-utils (>= 0.0.0)
+      rabbitmq (>= 0.0.0)
+      selinux (>= 0.0.0)
+      sysctl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/mattray/osops-utils.git
+  ref: master
+  sha: 8b65d4db2b8e677a5fd9f215b5cd2691f489dbff
+  specs:
+    osops-utils (1.0.3)
+
+GIT
+  remote: https://github.com/mattray/swift.git
+  ref: essex
+  sha: 18c3bf6e53ed348e08fd87dabf8484dd1d659d7c
+  specs:
+    swift (1.0.2)
+      apt (>= 0.0.0)
+      dsh (>= 0.0.0)
+      keystone (>= 0.0.0)
+      osops-utils (>= 0.0.0)
+      sysctl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/chef-client.git
+  ref: master
+  sha: e4301367f6d56a0be0a34a42b0ca4fcc6cea31e3
+  specs:
+    chef-client (1.1.5)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/rabbitmq.git
+  ref: master
+  sha: 5cad0652642c17245f7fb54e01bdf9b1f456bd25
+  specs:
+    rabbitmq (1.5.1)
+      apt (>= 1.4.4)
+      erlang (>= 0.9)
+      yum (>= 0.5.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/collectd.git
+  ref: master
+  sha: bf9d73513c037732b35fe5ced5af80e7ce60920a
+  specs:
+    collectd (1.0.2)
+      apache2 (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/dsh.git
+  ref: master
+  sha: 3712c357a01b114149aa8c1a486b13fb0de5608e
+  specs:
+    dsh (0.0.4)
+      osops-utils (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/glance.git
+  ref: master
+  sha: 8272de4eedf18eb3d4457010ec43f8bdaafee1d6
+  specs:
+    glance (1.0.6)
+      database (>= 0.0.0)
+      keystone (>= 0.0.0)
+      monitoring (>= 0.0.0)
+      mysql (>= 0.0.0)
+      osops-utils (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/monit.git
+  ref: master
+  sha: 5f04a9830c0ab2b74cf0f1a94a5bca5741ccb87c
+  specs:
+    monit (1.0.2)
+      apt (>= 0.0.0)
+      yum (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/monitoring.git
+  ref: master
+  sha: e579b63858296288c16c4f31bfd10933b2b2c57d
+  specs:
+    monitoring (0.0.2)
+      collectd (>= 0.0.0)
+      monit (>= 0.0.0)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/rsyslog.git
+  ref: master
+  sha: 4d40ce5dffb3135f705ed16ec444948468744b9a
+  specs:
+    rsyslog (1.1.2)
+
+GIT
+  remote: https://github.com/rcbops-cookbooks/sysctl.git
+  ref: master
+  sha: 16f300b62e6e0158fe075c875c94c4d5fb835b5d
+  specs:
+    sysctl (0.1.0)
+
+DEPENDENCIES
+  annoyances (>= 0)
+  apache2 (>= 0)
+  apt (>= 0)
+  aws (>= 0)
+  build-essential (>= 0)
+  chef-client (>= 0)
+  chef_handler (>= 0)
+  collectd (>= 0)
+  database (>= 0)
+  dsh (>= 0)
+  erlang (>= 0)
+  firewall (>= 0)
+  glance (>= 0)
+  horizon (>= 0)
+  keystone (>= 0)
+  modules (>= 0)
+  monit (>= 0)
+  monitoring (>= 0)
+  mysql (>= 0)
+  nova (>= 0)
+  ntp (>= 0)
+  ohai (>= 0)
+  openssh (>= 0)
+  openssl (>= 0)
+  osops-utils (>= 0)
+  postgresql (>= 0)
+  python (>= 0)
+  rabbitmq (>= 0)
+  rsyslog (>= 0)
+  runit (>= 0)
+  selinux (>= 0)
+  swift (>= 0)
+  sysctl (>= 0)
+  ufw (>= 0)
+  users (>= 0)
+  xfs (>= 0)
+  yum (>= 0)
+
