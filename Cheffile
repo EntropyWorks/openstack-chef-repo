@@ -1,6 +1,18 @@
 #!/usr/bin/env ruby
 #^syntax detection
 
+# Working on getting OpenStack Folsom up and running. One or more cookbooks not listed here. 
+# 
+# PPA from https://launchpad.net/~openstack-ubuntu-testing
+#
+# deb http://ppa.launchpad.net/openstack-ubuntu-testing/precise-trunk-testing/ubuntu precise main
+# 
+#  I have run into some problems with this PPA packages.
+#
+#  - Horizon issues: http://pastebin.com/DPLnEVhv
+#  - Glance (I need to create a paste bin with my work around hack)
+#
+
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'chef-client',
